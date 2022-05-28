@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hero from "../src/components/hero";
 import KumparanLogo from "../src/assets/kumparan.jpg";
+import MediumLogo from "../src/assets/medium.png";
 import FeatureCard from "../src/components/featureCard";
 
 export default function Home() {
@@ -20,30 +21,17 @@ export default function Home() {
           </div> */}
           <div className="divider text-4xl font-semibold">Write Platform</div>
 
-          <div className="flex gap-2 p-5 justify-center">
+          <div className="flex gap-5 p-5 justify-center">
             {" "}
-            <div className="card w-96 bg-base-100 shadow-xl image-full">
+            <div class="card w-96 bg-base-100 shadow-xl ">
               <figure>
                 <img src={KumparanLogo.src} alt="Shoes" />
               </figure>
-              <div className="card-body flex justify-center text-justify w-full">
-                <h2 className="card-title">Kumparan</h2>
-              </div>
             </div>
-            <div className="card w-96 bg-base-100 shadow-xl image-full">
+            <div class="card w-96 bg-base-100 shadow-xl">
               <figure>
-                <img
-                  src="https://api.lorem.space/image/shoes?w=400&h=225"
-                  alt="Shoes"
-                />
+                <img src={MediumLogo.src} alt="Shoes" />
               </figure>
-              <div className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Buy Now</button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
