@@ -4,6 +4,7 @@ import KumparanLogo from "../src/assets/kumparan.png";
 import MediumLogo from "../src/assets/medium.png";
 import NightOwl from "../src/assets/nightowl.webp";
 import Thrifting from "../src/assets/thrifting.png";
+import Linkedin from "../src/assets/linkedin.webp";
 import FeatureCard from "../src/components/featureCard";
 
 export default function Home() {
@@ -17,7 +18,10 @@ export default function Home() {
       <main>
         <Hero />
         {/* <FeatureCard /> */}
-        <div className="flex flex-col w-full border-opacity-50 mt-10">
+        <div
+          className="flex flex-col w-full border-opacity-50 mt-10"
+          id="platform"
+        >
           {/* <div className="grid h-20 card bg-base-300 rounded-box place-items-center">
             content
           </div> */}
@@ -25,8 +29,8 @@ export default function Home() {
             Write Platform
           </div>
 
-          <div className="flex gap-8 p-5 justify-center align-middle mb-8">
-            <div className="w-80 text-justify align-middle mt-5">
+          <div className="flex-1 lg:flex gap-8 p-5 justify-center align-middle mb-8">
+            <div className="w-80 text-justify align-middle mt-5 mb-10 lg:mb-0">
               <h6 className="text-2xl">@RikaRahmadini</h6>
               <p className="text-sm">
                 Social Enthusiast and Wellcome to My Story{" "}
@@ -37,20 +41,22 @@ export default function Home() {
                 Fingerspot.
               </p>
             </div>
-            <div class="card w-40 bg-white shadow-xl cursor-pointer hover:animate-bounce">
-              <figure>
-                <img src={KumparanLogo.src} alt="Shoes" />
-              </figure>
-            </div>
-            <div class="card w-40 bg-base-100 shadow-xl cursor-pointer hover:animate-bounce">
-              <figure>
-                <img src={MediumLogo.src} alt="Shoes" />
-              </figure>
+            <div className="flex gap-2 mt-2">
+              <div className="card w-40 bg-white shadow-xl cursor-pointer hover:animate-bounce">
+                <figure>
+                  <img src={KumparanLogo.src} alt="Shoes" />
+                </figure>
+              </div>
+              <div className="card w-40 bg-base-100 shadow-xl cursor-pointer hover:animate-bounce">
+                <figure>
+                  <img src={MediumLogo.src} alt="Shoes" />
+                </figure>
+              </div>
             </div>
           </div>
 
-          <div className="flex gap-8 mb-10 mt-2 justify-center ">
-            <div className="w-80 card bg-white shadow-xl p-4 hover:bg-slate-100 cursor-pointer">
+          <div className=" flex-1 lg:flex gap-8 mb-10 mt-2 justify-center p-3">
+            <div className="w-full lg:w-80 card bg-white shadow-xl p-4 hover:bg-slate-100 cursor-pointer my-5 lg:my-0">
               <img className="rounded-2xl" alt="" src={NightOwl.src}></img>
               <h6 className="font-semibold text-sm mt-2">
                 Sering Disebut Pemalas, Night Owl Tidak Perlu Minder dengan
@@ -64,7 +70,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="w-80 card bg-white shadow-xl p-4 hover:bg-slate-100 cursor-pointer">
+            <div className="w-full  lg:w-80 card bg-white shadow-xl p-4 hover:bg-slate-100 cursor-pointer my-5 lg:my-0">
               <img className="rounded-2xl" alt="" src={Thrifting.src}></img>
               <h6 className="font-semibold text-sm mt-2">
                 Tren Thrifting Belanja Pakaian Bekas
@@ -81,22 +87,30 @@ export default function Home() {
             <div class="divider"></div>
           </div>
 
-          <div className="flex-1 w-full justify-center text-center">
+          <div
+            className="flex-1 w-full justify-center text-center"
+            id="aboutus"
+          >
             <div className="justify-center">
               <div className="avatar placeholder">
                 <div className="bg-neutral-focus text-neutral-content rounded-full w-24">
                   <span className="text-3xl">RR</span>
                 </div>
               </div>
-              <h6 className=" text-2xl font-semibold ">Rika Rahmadini</h6>
-              <p className="text-xs font-semibold underline decoration-primary">
+              <div className="text-2xl font-semibold flex justify-center gap-2 ">
+                Rika Rahmadini{" "}
+                <span className="pt-1 cursor-pointer hover:animate-bounce">
+                  <img src={Linkedin.src} width={25} className="rounded-full" />
+                </span>
+              </div>
+              <p className="text-xs font-semibold underline decoration-primary px-10">
                 Customer Service Online | Student at Universitas 17 Agustus 1945
                 Surabaya
               </p>
 
               <div className="grid grid-cols-3 ">
                 <div />
-                <p className="text-xs">
+                <p className="text-xs col-span-3 lg:col-span-1 px-4">
                   Pengalaman kerja menuju 4 tahun pada bidang pelayanan customer
                   secara online. Dengan memberikan arahan dan pengecekan untuk
                   mengatasi kendala customer.
