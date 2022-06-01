@@ -3,8 +3,8 @@ import TypeAnimation from "react-type-animation";
 import DiniProfile from "../../assets/dini.webp";
 const Hero = () => {
   return (
-    <div className="hero min-h-screen bg-base-100">
-      <div className="hero-content flex-col lg:flex-row max-w-4xl gap-5">
+    <div className="lg:hero min-h-screen bg-base-100 px-5 ">
+      <div className="hero-content flex-col lg:flex-row max-w-4xl gap-5 ">
         <img
           src={DiniProfile.src}
           className="max-w-sm rounded-lg shadow-2xl mt-12"

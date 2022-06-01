@@ -17,13 +17,15 @@ export default function Home() {
       <main>
         <Hero />
         {/* <FeatureCard /> */}
-        <div className="flex flex-col w-full border-opacity-50">
+        <div className="flex flex-col w-full border-opacity-50 mt-10">
           {/* <div className="grid h-20 card bg-base-300 rounded-box place-items-center">
             content
           </div> */}
-          <div className="divider text-4xl font-semibold">Write Platform</div>
+          <div className="divider text-4xl font-semibold mb-12">
+            Write Platform
+          </div>
 
-          <div className="flex gap-8 p-5 justify-center align-middle ">
+          <div className="flex gap-8 p-5 justify-center align-middle mb-8">
             <div className="w-80 text-justify align-middle mt-5">
               <h6 className="text-2xl">@RikaRahmadini</h6>
               <p className="text-sm">
@@ -72,6 +74,87 @@ export default function Home() {
                 Siapa sangka kegiatan berburu pakaian bekas impor kini banyak
                 dilakukan dan menjadi populer di kalangan anak muda.
               </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col w-full mb-1">
+            <div class="divider"></div>
+          </div>
+
+          <div className="flex-1 w-full justify-center text-center">
+            <div className="justify-center">
+              <div className="avatar placeholder">
+                <div className="bg-neutral-focus text-neutral-content rounded-full w-24">
+                  <span className="text-3xl">RR</span>
+                </div>
+              </div>
+              <h6 className=" text-2xl font-semibold ">Rika Rahmadini</h6>
+              <p className="text-xs font-semibold underline decoration-primary">
+                Customer Service Online | Student at Universitas 17 Agustus 1945
+                Surabaya
+              </p>
+
+              <div className="grid grid-cols-3 ">
+                <div />
+                <p className="text-xs">
+                  Pengalaman kerja menuju 4 tahun pada bidang pelayanan customer
+                  secara online. Dengan memberikan arahan dan pengecekan untuk
+                  mengatasi kendala customer.
+                </p>
+                <div />
+              </div>
+            </div>
+            <div className="gird grid-cols-1 mt-3 mb-10">
+              <h6 className="text-xl  underline decoration-pink-500 mt-5 pr-16">
+                # Education
+              </h6>
+              <div className="flex justify-center text-left text-xs">
+                <ul className="steps steps-vertical text-left">
+                  <li className="step step-primary " data-content="">
+                    <span className="text-left">
+                      2015 - 2018
+                      <br />
+                      SMK Negeri 4 Malang
+                      <br />
+                      Multimedia
+                    </span>
+                  </li>
+                  <li className="step step-primary" data-content="">
+                    <span className="text-left">
+                      2019 - 2023
+                      <br />
+                      Universitas 17 Agustus 1945 Surabaya
+                      <br />
+                      Komunikasi dan Media
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <h6 className="text-xl  underline decoration-pink-500 mt-5">
+                # Work Experience
+              </h6>
+              <div className="flex justify-center text-left text-xs">
+                <ul className="steps steps-vertical text-left">
+                  <li className="step step-primary " data-content="">
+                    <span className="text-left pr-5">
+                      2017 - 2018
+                      <br />
+                      Fingerspot Indonesia ( Surabaya )
+                      <br />
+                      Intership
+                    </span>
+                  </li>
+                  <li className="step step-primary" data-content="">
+                    <span className="text-left">
+                      2018 - current
+                      <br />
+                      Fingerspot Indonesia ( Surabaya )
+                      <br />
+                      Customer Service Online
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
