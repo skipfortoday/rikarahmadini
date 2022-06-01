@@ -5,7 +5,6 @@ import MediumLogo from "../src/assets/medium.png";
 import NightOwl from "../src/assets/nightowl.webp";
 import Thrifting from "../src/assets/thrifting.png";
 import Linkedin from "../src/assets/linkedin.webp";
-import FeatureCard from "../src/components/featureCard";
 
 export default function Home() {
   return (
@@ -17,14 +16,11 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        {/* <FeatureCard /> */}
+
         <div
           className="flex flex-col w-full border-opacity-50 mt-10"
           id="platform"
         >
-          {/* <div className="grid h-20 card bg-base-300 rounded-box place-items-center">
-            content
-          </div> */}
           <div className="divider text-4xl font-semibold mb-12">
             Write Platform
           </div>
