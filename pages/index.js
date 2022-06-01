@@ -39,43 +39,59 @@ export default function Home() {
             </div>
             <div className="flex gap-2 mt-2">
               <div className="card w-40 bg-white shadow-xl cursor-pointer hover:animate-bounce">
-                <figure>
-                  <img src={KumparanLogo.src} alt="Shoes" />
-                </figure>
+                <a href={"https://kumparan.com/rika-rahmadini"}>
+                  <figure>
+                    <img src={KumparanLogo.src} alt="Shoes" />
+                  </figure>
+                </a>
               </div>
               <div className="card w-40 bg-base-100 shadow-xl cursor-pointer hover:animate-bounce">
-                <figure>
-                  <img src={MediumLogo.src} alt="Shoes" />
-                </figure>
+                <a href={"https://medium.com/@rrahmadini13"}>
+                  <figure>
+                    <img src={MediumLogo.src} alt="Shoes" />
+                  </figure>
+                </a>
               </div>
             </div>
           </div>
 
           <div className=" flex-1 lg:flex gap-8 mb-10 mt-2 justify-center p-3">
             <div className="w-full lg:w-80 card bg-white shadow-xl p-4 hover:bg-slate-100 cursor-pointer my-5 lg:my-0">
-              <img className="rounded-2xl" alt="" src={NightOwl.src}></img>
-              <h6 className="font-semibold text-sm mt-2">
-                Sering Disebut Pemalas, Night Owl Tidak Perlu Minder dengan
-                Early Bird!
-              </h6>
+              <a
+                href={
+                  "https://kumparan.com/rika-rahmadini/sering-disebut-pemalas-night-owl-tidak-perlu-minder-dengan-early-bird-1x9vJpdLTUB/1"
+                }
+              >
+                <img className="rounded-2xl" alt="" src={NightOwl.src}></img>
+                <h6 className="font-semibold text-sm mt-2">
+                  Sering Disebut Pemalas, Night Owl Tidak Perlu Minder dengan
+                  Early Bird!
+                </h6>
 
-              <p className="text-xs text-justify mt-2">
-                Banyak yang beranggapan Night Owl adalah pemalas. Padahal
-                sebenarnya saat kebanyakan orang tidur malam hari, Night Owl
-                justru lebih terpacu melakukan aktivitas.
-              </p>
+                <p className="text-xs text-justify mt-2">
+                  Banyak yang beranggapan Night Owl adalah pemalas. Padahal
+                  sebenarnya saat kebanyakan orang tidur malam hari, Night Owl
+                  justru lebih terpacu melakukan aktivitas.
+                </p>
+              </a>
             </div>
 
             <div className="w-full  lg:w-80 card bg-white shadow-xl p-4 hover:bg-slate-100 cursor-pointer my-5 lg:my-0">
-              <img className="rounded-2xl" alt="" src={Thrifting.src}></img>
-              <h6 className="font-semibold text-sm mt-2">
-                Tren Thrifting Belanja Pakaian Bekas
-              </h6>
+              <a
+                href={
+                  "https://medium.com/@rrahmadini13/tren-thrifting-belanja-pakaian-bekas-adba758cdb6e"
+                }
+              >
+                <img className="rounded-2xl" alt="" src={Thrifting.src}></img>
+                <h6 className="font-semibold text-sm mt-2">
+                  Tren Thrifting Belanja Pakaian Bekas
+                </h6>
 
-              <p className="text-xs text-justify mt-2">
-                Siapa sangka kegiatan berburu pakaian bekas impor kini banyak
-                dilakukan dan menjadi populer di kalangan anak muda.
-              </p>
+                <p className="text-xs text-justify mt-2">
+                  Siapa sangka kegiatan berburu pakaian bekas impor kini banyak
+                  dilakukan dan menjadi populer di kalangan anak muda.
+                </p>
+              </a>
             </div>
           </div>
 
@@ -96,7 +112,17 @@ export default function Home() {
               <div className="text-2xl font-semibold flex justify-center gap-2 ">
                 Rika Rahmadini{" "}
                 <span className="pt-1 cursor-pointer hover:animate-bounce">
-                  <img src={Linkedin.src} width={25} className="rounded-full" />
+                  <a
+                    href={
+                      "https://www.linkedin.com/in/rika-rahmadini-98774220b/"
+                    }
+                  >
+                    <img
+                      src={Linkedin.src}
+                      width={25}
+                      className="rounded-full"
+                    />
+                  </a>
                 </span>
               </div>
               <p className="text-xs font-semibold underline decoration-primary px-10">
